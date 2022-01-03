@@ -1,6 +1,6 @@
 # ViwerjsAngular
 
-This project was is simple use of viwerjs library in Angular
+This project is simple use of viwerjs library in Angular
 
 ## Installation
  
@@ -16,12 +16,15 @@ import css from viwerjs
 ## use 
 
 add  directive `viwerjsAngPreview` on any image you want to show preview.
+also you can pass options for custom chagnes
+more information check viwerjs library
 
-Example 
+Example : 
 
 `  <img
     viwerjsAngPreview
     width="200"
+    [options]="{}"
     src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg"
   />
 `

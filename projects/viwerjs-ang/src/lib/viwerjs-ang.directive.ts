@@ -6,7 +6,7 @@ import Viewer from 'viewerjs';
 })
 export class ViwerjsAngDirective implements AfterViewInit, OnDestroy {
 
-    @Input() viwerjsAng: Viewer.Options = {};
+    @Input() options: Viewer.Options = {};
     instance: Viewer | any;
 
     private nativeElement: HTMLElement;
@@ -26,7 +26,7 @@ export class ViwerjsAngDirective implements AfterViewInit, OnDestroy {
 
         this.instance = new Viewer(this.nativeElement, {
             transition: false,
-            ...this.viwerjsAng
+            ...this.options
         });
     }
 

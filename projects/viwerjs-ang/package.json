@@ -1,15 +1,20 @@
 {
   "name": "viwerjs-ang",
-  "version": "0.0.3",
+  "version": "0.0.6",
   "author": {
     "name": "Harikrushna Patel",
     "email": "github@haripatel.co.in"
   },
+  "repository": {
+    "url": "https://github.com/hardikhari96/viwerjs-ang"
+  },
+  "homepage": "https://github.com/hardikhari96/viwerjs-ang",
   "keywords": ["angular","viwerjs","image-preview"],
   "peerDependencies": {
     "@angular/common": "^13.0.0",
     "@angular/core": "^13.0.0"
   },
+  "license": "MIT",
   "dependencies": {
     "tslib": "^2.3.0"
   }
