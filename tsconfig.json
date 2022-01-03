@@ -21,7 +21,15 @@
     "lib": [
       "es2020",
       "dom"
-    ]
+    ],
+    "paths": {
+      "viwerjs-ang": [
+        "dist/viwerjs-ang/viwerjs-ang",
+        "dist/viwerjs-ang",
+        "dist/viwerjs-ang/viwerjs-ang",
+        "dist/viwerjs-ang"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,

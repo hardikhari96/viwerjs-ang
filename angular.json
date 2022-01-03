@@ -100,6 +100,37 @@
           }
         }
       }
+    },
+    "viwerjs-ang": {
+      "projectType": "library",
+      "root": "projects/viwerjs-ang",
+      "sourceRoot": "projects/viwerjs-ang/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/viwerjs-ang/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/viwerjs-ang/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/viwerjs-ang/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/viwerjs-ang/src/test.ts",
+            "tsConfig": "projects/viwerjs-ang/tsconfig.spec.json",
+            "karmaConfig": "projects/viwerjs-ang/karma.conf.js"
+          }
+        }
+      }
     }
   },
   "defaultProject": "viwerjs-angular"
